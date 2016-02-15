@@ -14,17 +14,4 @@ I used a Python notebook (Jupyter) with Python 2.7. Github renders the evaluatio
 
 Let me know if any of this is unclear! 
 
-Finally, for comparison purposes, I have implemented this analysis in Matlab in tuning_curves_compare.m. This script requires a number of functions, mainly in the neuraldata-w16 codebase, but some included in the folder matlab_tc_req which should also be in your path when you run the matlab script:
-- emi_expday()
-- emi_loadExpKeys()
-- LoadSpikes()
-- emi_position()
-	- emi_xy_targets()
-		- Nlx2MatVT()
-	- emi_lights()
-		- Nlx2MatEV()
-- emi_linearize()
-	- emi_makecoord()
-	- LinearizePos()
-		- ProcessConfig()
-- TuningCurves()
+Finally, for comparison purposes, I have implemented this analysis in Matlab in tuning_curves_compare.m. This script requires a number of functions, mainly in the neuraldata-w16 codebase, but some included in the folder matlab_tc_req which should also be in your path when you run the matlab script.
