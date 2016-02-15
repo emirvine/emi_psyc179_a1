@@ -2,7 +2,7 @@ This repository contains the code relevant for PSYC 179 Assignment 1.
 
 Here, I implemented the loading and analyses of neural data to determine tuning curves of dorsal hippocampus CA1 neurons' firing rate by rat position.
 
-I used a Python notebook (Jupyter) with Python 2.7. Github renders the evaluations of each of these code cells, so it should be possible for you to see the output of the code. If you want to run this code yourself, follow these instructions:
+I used a Python notebook (Jupyter) with Python 2.7. Github renders the evaluations of each of these code cells, so it should be possible for you to see the output of the code. Click on the tuning_curves.ipynb file to view this notebook. If you want to run this code yourself, follow these instructions:
 
 - In Matlab (I used R2013b), run the loading_data.m script which loads the data from the Neuralynx files. To run this script you will have to specify the file path to R063-2015-03-20_recording on your computer. Ensure that the *.mat files produced from this script are saved in the same file where you have located the tuning_curves.ipynb. This will enable the notebook to have those files in its path when running the notebook and loading the data!
 

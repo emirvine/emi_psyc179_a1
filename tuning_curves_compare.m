@@ -45,11 +45,12 @@ cfg.binEdges{1} = z_min:binsize:z_max;
 clear tc;
 tc = TuningCurves(cfg, spikes_phase, linear_z);
 
-figure(1); clf; hold on;
+f = figure(1); clf; hold on;
 plot(tc.tc', 'LineWidth', 1.2);
 ylabel('Firing rate (Hz)');
 xlabel('Position (cm)');
 title('Unfiltered tuning curves in Matlab');
+saveas(gcf,'matlab_unfiltered_tc.png')
 
 % Making the tuning curves with a Gaussian filter
 z_min = min(linear_z.data(1,:));
@@ -61,8 +62,9 @@ cfg.smoothingKernel = gausskernel(15, 3);
 clear tc;
 tc_gauss = TuningCurves(cfg, spikes_phase, linear_z);
 
-figure(2); clf; hold on;
+uf = figure(2); clf; hold on;
 plot(tc_gauss.tc', 'LineWidth', 1.2);
 ylabel('Firing rate (Hz)');
 xlabel('Position (cm)');
 title('Gaussian-filtered tuning curves in Matlab');
+saveas(gcf,'matlab_filtered_tc.png')
